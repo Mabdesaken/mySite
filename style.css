@@ -21,6 +21,8 @@ h2 {
 .imageOfMe {
     width: 400px;
     height: auto;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-delay: 1s;
 }
 
 .first {
