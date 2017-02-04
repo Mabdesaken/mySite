@@ -1,13 +1,19 @@
-/**
- * Created by Mabdesaken on 04-02-2017.
- */
+$(document).ready(function () {
+    $(window).scroll(function(event) {
+        var y = $(this).scrollTop();
+
+        if(y >= 400) {
+            $('#me').addClass('animate');
+        }
+    });
+});
 
 $(function () {
     var shake = 'animated shake';
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
-    $('.imageOfMe').on('click',function () {
-        $('.imageOfMe').addClass(shake).one(animationEnd,function () {
+    $('#me').on('click',function () {
+        $('#me').addClass(shake).one(animationEnd,function () {
             $(this).removeClass(shake);
         });
     });

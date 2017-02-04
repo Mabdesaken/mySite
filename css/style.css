@@ -2,8 +2,9 @@ h1 {
     font-family: 'Source Sans Pro';
     font-weight: 300;
     font-size: 3em;
-    padding-top:200px;
 }
+
+/*-- ID'S --*/
 
 #top {
     background: #1e2732;
@@ -12,25 +13,58 @@ h1 {
     color:#ffffff;
 }
 
-#img-circle {
-    border-radius: 50%;
-    border: solid grey 5px;
+#top h1 {
+    padding-top:300px;
 }
 
-/*
-.education1 {
+#scroll {
+    margin-top: 200px;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+#scroll img {
+    position: relative;
+}
+
+#scroll div {
+    position: relative;
+}
+
+#me {
+    height: 300px;
+    border-radius: 50%;
+}
+
+#me.animate {
+    transform: translate(5em, 0);
+    -moz-transform: translate(5em, 0);
+    -webkit-transform: translate(5em, 0);
+}
+
+.animate {
+    transition: 2s ease-in-out;
+    -moz-animation: 2s ease-in-out;
+    -webkit-animation: 2s ease-in-out;
+}
+
+#education {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    width: 49%;
     padding: 50px;
     background-color: dodgerblue;
     color: #ffffff;
-    float: left;
-    box-sizing: border-box;
+    width: 300px;
 }
 
-.education1:hover{
+#education:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#education.animate {
+    transform: translate(-5em, 0);
+    -moz-transform: translate(-5em, 0);
+    -webkit-transform: translate(-5em, 0);
 }
 
 .box2 {
@@ -48,9 +82,16 @@ h1 {
 .box2:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-*/
 
-/*-- ID'S --*/
+/*
+-webkit-animation-fill-mode: forwards;
+-moz-animation-fill-mode: forwards;
+animation-fill-mode: forwards;
+
+-webkit-animation-duration: 1s;
+-moz-animation-duration: 1s;
+animation-duration: 1s;
+*/
 
 
 
