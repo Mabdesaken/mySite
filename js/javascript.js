@@ -1,4 +1,4 @@
-$(document).ready(function () {
+/*$(document).ready(function () {
     $(window).scroll(function(event) {
         var y = $(this).scrollTop();
 
@@ -7,13 +7,20 @@ $(document).ready(function () {
         }
     });
 });
+*/
+var shake = 'animated shake';
+var bounce = 'animated bounce';
+var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+$(document).ready(function () {
+   $('.imgMe').addClass(bounce).one(animationEnd,function () {
+       $(this).removeClass(bounce);
+   });
+});
 
 $(function () {
-    var shake = 'animated shake';
-    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-    $('#me').on('click',function () {
-        $('#me').addClass(shake).one(animationEnd,function () {
+    $('.imgMe').on('click',function () {
+        $('.imgMe').addClass(shake).one(animationEnd,function () {
             $(this).removeClass(shake);
         });
     });
