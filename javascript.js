@@ -20,6 +20,12 @@ $(document).ready(function () {
 
 $(function () {
     $('.imgMe').on('click',function () {
+        $('.clickMe').addClass('animated slideOutRight');
+    });
+});
+
+$(function () {
+    $('.imgMe').on('click',function () {
         $('.imgMe').addClass(shake).one(animationEnd,function () {
             $(this).removeClass(shake);
         });
